@@ -9,16 +9,16 @@
 
 | Page      | 1 | 2 | 3 |  |
 |-----------|---|---|---|-----|
-| User Homepage |   |   |   |     |
-| User Product detail |   |   |   |     |
+| User Homepage | x |   |   |     |
+| User Product detail |   | x |   |     |
 | User Search results |   |   |   |     |
 | UserFilter results |   |   |   |     |
-| User Shopping cart |   |   |   |     |
-| User Login |   |   |   |     |
+| User Shopping cart |   | x | x |     |
+| User Login | x |   |   |     |
 | User Register |   |   |   |     |
-| User Checkout |   |   |   |     |
+| User Checkout |   |   | x |     |
 | User My account |   |   |   |     |
-| User Order history |   |   |   |     |
+| User Order history | x |   |   |     |
 | Admin dashboard |   |   |   |     |
 | Admin customers |   |   |   |     |
 | Admin customer detail |   |   |   |     |
@@ -32,11 +32,11 @@
 |----------|---|---|---|-----|
 | User: Text searching for a product    |    |    |  | |
 | User: Viewing product detail          |    |    |  | |
-| User: Adding product to cart          |    |   | |  |
-| User: Checking out an order           |    |   |  |    |
-| User: Canceling an order              |    |    |  |    |
-| User: Registering                     |    |    |  |    |
-| User: Viewing order state             |    |   | |  |
+| User: Adding product to cart          |    | x | |  |
+| User: Checking out an order           |    |   | x |  |
+| User: Canceling an order              |    |    |  |  |
+| User: Registering                     |    |    |  |  |
+| User: Viewing order state             | x |   | |  |
 | User: Creating an order               |    |   | |  |
 | User: Viewing cart contents           |    |   | |  |
 | Admin: Editing quantity of a product  |    |   | |  |

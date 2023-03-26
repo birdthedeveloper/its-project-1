@@ -2,6 +2,7 @@
 .PHONY: build test 
 
 build: readme
+	rm -f xptace20.zip
 	zip xptace20.zip README.md *.feature
 
 test:
