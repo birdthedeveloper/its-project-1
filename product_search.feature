@@ -3,7 +3,7 @@
 
 Feature: User can search for product
 
-    Scenario Outline: User searches for a product 
+    Scenario Outline: 4 - User searches for a product 
         Given User is on homepage
         When User enters <item> in the search bar
         Then User should see <item> product in the results
@@ -13,7 +13,7 @@ Feature: User can search for product
             | Iphone  |
             | Ipod    |
 
-    Scenario Outline: User can open product detail from search result
+    Scenario Outline: 5 - User can open product detail from search result
         Given User searched for an <item>
         When User opens first search result
         Then User should see product detail of <item>

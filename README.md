@@ -9,42 +9,41 @@
 
 | Page      | 1 | 2 | 3 |  |
 |-----------|---|---|---|-----|
-| User Homepage | x |   |   |     |
-| User Product detail |   | x |   |     |
-| User Search results |   |   |   |     |
-| UserFilter results |   |   |   |     |
-| User Shopping cart |   | x | x |     |
-| User Login | x |   |   |     |
-| User Register |   |   |   |     |
-| User Checkout |   |   | x |     |
-| User My account |   |   |   |     |
-| User Order history | x |   |   |     |
-| Admin dashboard |   |   |   |     |
-| Admin customers |   |   |   |     |
-| Admin customer detail |   |   |   |     |
-| Admin orders |   |   |   |     |
-| Admin order detail |   |   |   |     |
+| User Homepage         | x |   |   |    |    |     |     |     |
+| User Product detail   |   | x |   |    |    |     |     |     |
+| User Search results   |   |   |   |    |    |     |     |     |
+| User Shopping cart    |   | x | x |    |    |     |     |     |
+| User Login            | x |   |   |    |    |     |     |     |
+| User Register         |   |   |   |    |    |     |     |     |
+| User Checkout         |   |   | x |    |    |     |     |     |
+| User My account       |   |   |   |    |    |     |     |     |
+| User Order history    | x |   |   |    |    |     |     |     |
+| Admin dashboard       |   |   |   |    |    |     |     |     |
+| Admin customers       |   |   |   |    |    |     |     |     |
+| Admin customer detail |   |   |   |    |    |     |     |     |
+| Admin orders          |   |   |   |    |    |     |     |     |
+| Admin order detail    |   |   |   |    |    |     |     |     |
 
 
 ## Matice pokrytí aktivit
 
 | Activities | 1 | 2 | 3 | ... |
 |----------|---|---|---|-----|
-| User: Text searching for a product    |    |    |  | |
-| User: Viewing product detail          |    |    |  | |
-| User: Adding product to cart          |    | x | |  |
-| User: Checking out an order           |    |   | x |  |
-| User: Canceling an order              |    |    |  |  |
-| User: Registering                     |    |    |  |  |
-| User: Viewing order state             | x |   | |  |
-| User: Creating an order               |    |   | |  |
-| User: Viewing cart contents           |    |   | |  |
-| Admin: Editing quantity of a product  |    |   | |  |
-| Admin: Listing all products           |    |   | |  |
-| Admin: Editing customer account       |    |   | |  |
-| Admin: Listing all customer accounts  |    |   | |  |
-| Admin: Editing order state            |    |   | |  |
-| Admin: Listing all orders             |    |   | |  |
+| User: Text searching for a product    |   |   |   |   |   |   |   |   |
+| User: Viewing product detail          |   |   |   |   |   |   |   |   |
+| User: Adding product to cart          |   | x |   |   |   |   |   |   |
+| User: Checking out an order           |   |   | x |   |   |   |   |   |
+| User: Canceling an order              |   |   |   |   |   |   |   |   |
+| User: Registering                     |   |   |   |   |   |   |   |   |
+| User: Viewing order state             | x |   |   |   |   |   |   |   |
+| User: Creating an order               |   |   |   |   |   |   |   |   |
+| User: Viewing cart contents           |   |   |   |   |   |   |   |   |
+| Admin: Editing quantity of a product  |   |   |   |   |   |   |   |   |
+| Admin: Listing all products           |   |   |   |   |   |   |   |   |
+| Admin: Editing customer account       |   |   |   |   |   |   |   |   |
+| Admin: Listing all customer accounts  |   |   |   |   |   |   |   |   |
+| Admin: Editing order state            |   |   |   |   |   |   |   |   |
+| Admin: Listing all orders             |   |   |   |   |   |   |   |   |
 
 
 
@@ -53,4 +52,10 @@
 
 | Feature file | 1 | 2 | 3 | ... |
 |----------|---|---|---|-----|
-| sortiment.feature |  |  | | |
+| order_history.feature             |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| order_management.feature          |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| product_management.feature        |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| product_purchase.feature          |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| product_search.feature            |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| registration.feature              |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| user_account_management.feature   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |

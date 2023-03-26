@@ -1,8 +1,6 @@
 # declarative
 # one story per scenario
 
-#TODO
-
 Feature: Order history
 
     Scenario: 1 - User can view order history
