@@ -1,8 +1,6 @@
 # declarative
 # one story per scenario
 
-#TODO
-
 Feature: Admin can manage user accounts
 
     Scenario: 7 - Admin can list all the customers

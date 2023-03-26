@@ -9,5 +9,3 @@ Feature: Registration
         Given User has an account 
         When User enters right credentials into log in page 
         Then User should be signed in
-    
-    Scenario: 

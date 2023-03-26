@@ -1,8 +1,9 @@
 # ITS Projekt 1
 
-- **Autor:** Jméno Příjmení (xlogin99)
-- **Datum:** 2023-03-08
+- **Autor:** Martin Ptáček (xptace20)
+- **Datum:** 2023-03-26
 
+# TODO
 ## Matice pokrytí artefaktů
 
 Čísla testů jednoznačně identifikují scénář v souborech `.feature`.
@@ -24,7 +25,7 @@
 | Admin orders          |   |   |   |    |    |     |     |     |
 | Admin order detail    |   |   |   |    |    |     |     |     |
 
-
+# TODO
 ## Matice pokrytí aktivit
 
 | Activities | 1 | 2 | 3 | ... |
@@ -47,15 +48,14 @@
 
 
 
-
 ## Matice Feature-Test
 
-| Feature file | 1 | 2 | 3 | ... |
+| Feature file | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
 |----------|---|---|---|-----|
-| order_history.feature             |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-| order_management.feature          |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-| product_management.feature        |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-| product_purchase.feature          |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-| product_search.feature            |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-| registration.feature              |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-| user_account_management.feature   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| order_history.feature             | x |   |   |   |   |   |   |   |   |   |   |   |
+| order_management.feature          |   |   |   |   |   |   |   |   | x | x | x |   |
+| product_management.feature        |   |   |   |   |   |   |   |   |   |   |   | x |
+| product_purchase.feature          |   | x | x |   |   |   |   |   |   |   |   |   |
+| product_search.feature            |   |   |   | x | x |   |   |   |   |   |   |   |
+| registration.feature              |   |   |   |   |   | x |   |   |   |   |   |   |
+| user_account_management.feature   |   |   |   |   |   |   | x | x |   |   |   |   |

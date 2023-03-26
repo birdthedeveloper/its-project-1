@@ -3,9 +3,9 @@
 
 #TODO
 
-Feature: Order history
+Feature: Product management
 
-    Scenario: 
+    Scenario: 12 - Admin can add new product and change it's quantity
         Given 
         When 
         Then 
