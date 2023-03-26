@@ -15,13 +15,12 @@
 | User Search results   |   |   |   | x  | x  |     |     |     |   |    |    |    |
 | User Shopping cart    |   | x | x |    |    |     |     |     |   |    |    |    |
 | User Login            | x |   |   |    |    |     |     |     |   |    |    |    |
-| User Register         |   |   |   |    |    |     |     |     |   |    |    |    |
+| User Register         |   |   |   |    |    |  x  |     |     |   |    |    |    |
 | User Checkout         |   |   | x |    |    |     |     |     |   |    |    |    |
-| User My account       |   |   |   |    |    |     |     |     |   |    |    |    |
 | User Order history    | x |   |   |    |    |     |     |     |   |    |    |    |
 | Admin dashboard       |   |   |   |    |    |     |     |     |   |    |    |    |
-| Admin customers       |   |   |   |    |    |     |     |     |   |    |    |    |
-| Admin customer detail |   |   |   |    |    |     |     |     |   |    |    |    |
+| Admin customers       |   |   |   |    |    |     |   x |     |   |    |    |    |
+| Admin customer detail |   |   |   |    |    |     |     |  x  |   |    |    |    |
 | Admin orders          |   |   |   |    |    |     |     |     | x | x  |    |    |
 | Admin order detail    |   |   |   |    |    |     |     |     |   |    |  x |    |
 | Admin products        |   |   |   |    |    |     |     |     |   |    |    |  x |
@@ -31,20 +30,20 @@
 
 | Activities                            | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
 |---------------------------------------|---|---|---|---|---|---|---|---|---|----|----|----|
-| User: Text searching for a product    |   |   |   |   |   |   |   |   |   |    |    |    |
-| User: Viewing product detail          |   |   |   |   |   |   |   |   |   |    |    |    |
+| User: Text searching for a product    |   |   |   | x | x |   |   |   |   |    |    |    |
+| User: Viewing product detail          |   |   |   |   | x |   |   |   |   |    |    |    |
 | User: Adding product to shopping cart |   | x |   |   |   |   |   |   |   |    |    |    |
-| User: Checking out an order           |   |   | x |   |   |   |   |   |   |    |    |    |
-| User: Canceling an order              |   |   |   |   |   |   |   |   |   |    |    |    |
-| User: Registering                     |   |   |   |   |   |   |   |   |   |    |    |    |
+| User: Checking out                    |   |   | x |   |   |   |   |   |   |    |    |    |
+| User: Sign in                         |   |   |   |   |   | x |   |   |   |    |    |    |
 | User: Viewing order state             | x |   |   |   |   |   |   |   |   |    |    |    |
-| User: Creating an order               |   |   |   |   |   |   |   |   |   |    |    |    |
-| User: Viewing cart contents           |   |   |   |   |   |   |   |   |   |    |    |    |
+| User: Creating an order               |   |   | x |   |   |   |   |   |   |    |    |    |
+| User: Viewing cart contents           |   | x |   |   |   |   |   |   |   |    |    |    |
 | Admin: Add new product                |   |   |   |   |   |   |   |   |   |    |    | x  |
-| Admin: Editing customer account       |   |   |   |   |   |   |   |   |   |    |    |    |
-| Admin: Listing all customer accounts  |   |   |   |   |   |   |   |   |   |    |    |    |
-| Admin: Editing order state            |   |   |   |   |   |   |   |   |   |    |    |    |
-| Admin: Listing all orders             |   |   |   |   |   |   |   |   |   |    |    |    |
+| Admin: Editing customer account       |   |   |   |   |   |   |   | x |   |    |    |    |
+| Admin: Listing all customer accounts  |   |   |   |   |   |   | x |   |   |    |    |    |
+| Admin: Editing order state            |   |   |   |   |   |   |   |   |   |    |  x |    |
+| Admin: Listing all orders             |   |   |   |   |   |   |   |   | x |    |    |    |
+| Admin: Add new order                  |   |   |   |   |   |   |   |   |   | x  |    |    |
 
 
 

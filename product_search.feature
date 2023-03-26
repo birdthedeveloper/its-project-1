@@ -1,5 +1,3 @@
-# declarative
-# one story per scenario
 
 Feature: User can search for product
 

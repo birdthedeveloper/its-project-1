@@ -1,5 +1,3 @@
-# declarative
-# one story per scenario
 
 Feature: Admin can manage user accounts
 

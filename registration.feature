@@ -1,7 +1,3 @@
-# declarative
-# one story per scenario
-
-#TODO
 
 Feature: Registration
 
