@@ -3,7 +3,6 @@
 - **Autor:** Martin Ptáček (xptace20)
 - **Datum:** 2023-03-26
 
-# TODO
 ## Matice pokrytí artefaktů
 
 Čísla testů jednoznačně identifikují scénář v souborech `.feature`.
@@ -18,14 +17,14 @@
 | User Register         |   |   |   |    |    |  x  |     |     |   |    |    |    |
 | User Checkout         |   |   | x |    |    |     |     |     |   |    |    |    |
 | User Order history    | x |   |   |    |    |     |     |     |   |    |    |    |
-| Admin dashboard       |   |   |   |    |    |     |     |     |   |    |    |    |
+| Admin dashboard       |   |   |   |    |    |     |   x |     | x |    |    |    |
 | Admin customers       |   |   |   |    |    |     |   x |     |   |    |    |    |
 | Admin customer detail |   |   |   |    |    |     |     |  x  |   |    |    |    |
 | Admin orders          |   |   |   |    |    |     |     |     | x | x  |    |    |
 | Admin order detail    |   |   |   |    |    |     |     |     |   |    |  x |    |
 | Admin products        |   |   |   |    |    |     |     |     |   |    |    |  x |
 
-# TODO
+
 ## Matice pokrytí aktivit
 
 | Activities                            | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
