@@ -1,5 +1,3 @@
-# declarative
-# one story per scenario
 
 Feature: Admin order management
 
