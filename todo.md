@@ -21,3 +21,5 @@ Příkladem jednoduchého testu může být oveření, že:
 - .feature files
 - README.md - matice pokryti
 - overit readme.md pomoci pandoc
+
+user, bitnami
