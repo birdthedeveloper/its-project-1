@@ -24,6 +24,7 @@
 | Admin customer detail |   |   |   |    |    |     |     |     |   |    |    |    |
 | Admin orders          |   |   |   |    |    |     |     |     | x | x  |    |    |
 | Admin order detail    |   |   |   |    |    |     |     |     |   |    |  x |    |
+| Admin products        |   |   |   |    |    |     |     |     |   |    |    |  x |
 
 # TODO
 ## Matice pokrytí aktivit
@@ -39,8 +40,7 @@
 | User: Viewing order state             | x |   |   |   |   |   |   |   |   |    |    |    |
 | User: Creating an order               |   |   |   |   |   |   |   |   |   |    |    |    |
 | User: Viewing cart contents           |   |   |   |   |   |   |   |   |   |    |    |    |
-| Admin: Editing quantity of a product  |   |   |   |   |   |   |   |   |   |    |    |    |
-| Admin: Listing all products           |   |   |   |   |   |   |   |   |   |    |    |    |
+| Admin: Add new product                |   |   |   |   |   |   |   |   |   |    |    | x  |
 | Admin: Editing customer account       |   |   |   |   |   |   |   |   |   |    |    |    |
 | Admin: Listing all customer accounts  |   |   |   |   |   |   |   |   |   |    |    |    |
 | Admin: Editing order state            |   |   |   |   |   |   |   |   |   |    |    |    |
