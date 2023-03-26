@@ -1,2 +1,3 @@
 # its-project-1
-VU
+
+VUT FIT ITS PROJECT 1
