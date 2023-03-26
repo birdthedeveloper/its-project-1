@@ -23,3 +23,5 @@ Příkladem jednoduchého testu může být oveření, že:
 - overit readme.md pomoci pandoc
 
 user, bitnami
+
+
