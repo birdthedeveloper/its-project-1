@@ -18,7 +18,7 @@ services:
       - '8080:8080'
       - '443:8443'
     environment:
-      - OPENCART_HOST=opencart
+      #- OPENCART_HOST=opencart
       - OPENCART_EXTERNAL_HTTP_PORT_NUMBER=8080
       - OPENCART_DATABASE_HOST=mariadb
       - OPENCART_DATABASE_PORT_NUMBER=3306
