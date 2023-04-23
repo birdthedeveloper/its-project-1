@@ -39,3 +39,7 @@ def selenium_browser(context):
 # taken by behave
 def before_all(context):
     use_fixture(selenium_browser, context)
+
+def after_feature(context, feature):
+    context.driver.delete_all_cookies()
+    context.driver.get(context.base)

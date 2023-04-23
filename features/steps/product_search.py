@@ -20,15 +20,18 @@ def step_impl(context):
 
 @given('User searched for an Iphone')
 def step_impl(context):
-    #TODO implement this
-    pass
+    context.driver.get(context.base)
+    context.driver.set_window_size(1920, 1080)
+    context.driver.find_element(By.NAME, "search").click()
+    context.driver.find_element(By.NAME, "search").send_keys("Iphone")
+    context.driver.find_element(By.NAME, "search").send_keys(Keys.ENTER)
 
 @when("User opens first search result")
 def step_impl(context):
-    #TODO implement this
+    context.driver.find_element(By.CSS_SELECTOR, '#product-list > div:nth-child(1) > form > div > div.image').click()
     pass
 
 @then('User should see product detail of Iphone')
 def step_impl(context):
-    #TODO implement this
+    assert 'en-gb/product' in context.driver.current_url
     pass
