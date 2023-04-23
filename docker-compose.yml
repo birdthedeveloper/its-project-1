@@ -9,13 +9,17 @@ services:
       - MARIADB_DATABASE=bitnami_opencart
     volumes:
       - 'mariadb_data:/bitnami/mariadb'
+    networks:
+      - selenium-its
+
   opencart:
     image: docker.io/bitnami/opencart:4
     ports:
-      - '80:8080'
+      - '8080:8080'
       - '443:8443'
     environment:
-      - OPENCART_HOST=localhost
+      - OPENCART_HOST=opencart
+      - OPENCART_EXTERNAL_HTTP_PORT_NUMBER=8080
       - OPENCART_DATABASE_HOST=mariadb
       - OPENCART_DATABASE_PORT_NUMBER=3306
       - OPENCART_DATABASE_USER=bn_opencart
@@ -27,6 +31,34 @@ services:
       - 'opencart_storage_data:/bitnami/opencart_storage/'
     depends_on:
       - mariadb
+    networks:
+      - selenium-its
+
+  selenium-hub:
+    image: selenium/hub:4.8
+    container_name: selenium-hub
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+    networks:
+      - selenium-its
+
+  chrome:
+    image: selenium/node-chrome:4.8
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - VNC_NO_PASSWORD=1
+    ports:
+      - "7900:7900"
+    networks:
+      - "selenium-its"
+
 volumes:
   mariadb_data:
     driver: local
@@ -34,3 +66,6 @@ volumes:
     driver: local
   opencart_storage_data:
     driver: local
+
+networks:
+  selenium-its:

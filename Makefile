@@ -1,16 +1,10 @@
 
-.PHONY: build test 
+.PHONY: build test
 
-build: readme
-	rm -f xptace20.zip
-	zip xptace20.zip README.md *.feature
+build:
+	if ! [ "/home/mptacek/r/b/its-project-1/venv/bin/python" = "$$(which python)" ]; then echo venv ; exit 1; fi
+	pip freeze > requirements.txt
+	zip -r xptace20.zip features requirements.txt
 
 test:
-	rm -f output.pdf
-	pandoc README.md -o output.pdf
-	rm -f output.pdf
-	isutf8 *.feature
-	isutf8 README.md
-
-readme: README.md
-	pandoc -V geometry:margin=2cm --variable urlcolor=blue $< -o README.pdf
+	bash ./run-test.sh
