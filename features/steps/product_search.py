@@ -1,36 +1,24 @@
 from behave import *
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 @given("User is on homepage")
 def step_impl(context):
-    #TODO implement this
-    pass
-
-@when('User enters Ipad in the search bar')
-def step_impl(context):
-    #TODO implement this
-    pass
+    context.driver.get(context.base)
+    context.driver.set_window_size(1920, 1080)
 
 @when('User enters Iphone in the search bar')
 def step_impl(context):
-    #TODO implement this
-    pass
+    context.driver.find_element(By.NAME, "search").click()
+    context.driver.find_element(By.NAME, "search").send_keys("Iphone")
+    context.driver.find_element(By.NAME, "search").send_keys(Keys.ENTER)
 
 @then('User should see Iphone product in the results')
 def step_impl(context):
-    #TODO implement this
-    pass
-
-@then('User should see Ipad product in the results')
-def step_impl(context):
-    #TODO implement this
-    pass
+    # find iphone image
+    element = context.driver.find_element(By.XPATH, r'//*[@id="product-list"]/div/form/div/div[1]/a/img')
 
 @given('User searched for an Iphone')
-def step_impl(context):
-    #TODO implement this
-    pass
-
-@given('User searched for an Ipad')
 def step_impl(context):
     #TODO implement this
     pass
@@ -41,34 +29,6 @@ def step_impl(context):
     pass
 
 @then('User should see product detail of Iphone')
-def step_impl(context):
-    #TODO implement this
-    pass
-
-@then('User should see product detail of Ipad')
-def step_impl(context):
-    #TODO implement this
-    pass
-
-@when(u'User enters Ipod in the search bar')
-def step_impl(context):
-    #TODO implement this
-    pass
-
-
-@then(u'User should see Ipod product in the results')
-def step_impl(context):
-    #TODO implement this
-    pass
-
-
-@given(u'User searched for an Ipod')
-def step_impl(context):
-    #TODO implement this
-    pass
-
-
-@then(u'User should see product detail of Ipod')
 def step_impl(context):
     #TODO implement this
     pass

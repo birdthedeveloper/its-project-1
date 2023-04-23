@@ -18,7 +18,7 @@ def get_driver():
         driver = webdriver.Remote(
                 command_executor='http://localhost:4444/wd/hub',
                 desired_capabilities=DesiredCapabilities.FIREFOX)
-    driver.implicitly_wait(15)
+    driver.implicitly_wait(5)
 
     # Web stranku ziskate nasledujicim:
     # (jedno nebo druhe, zalezi na nastaveni prostedi)
@@ -30,6 +30,7 @@ def get_driver():
 @fixture
 def selenium_browser(context):
     context.driver = get_driver()
+    context.base = 'http://opencart:8080'
     yield context.driver
 
     # -- CLEANUP-FIXTURE PART:

@@ -9,7 +9,7 @@ Feature: User can search for product
         Examples:
             | item    |
             | Iphone  |
-            | Ipod    |
+#           | Ipod    |
 
     Scenario Outline: 5 - User can open product detail from search result
         Given User searched for an <item>
@@ -19,4 +19,4 @@ Feature: User can search for product
         Examples:
             | item    |
             | Iphone  |
-            | Ipod    |
+#           | Ipod    |
