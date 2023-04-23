@@ -8,6 +8,8 @@ from selenium.common.exceptions import WebDriverException
 
 from behave import fixture, use_fixture
 
+import time
+
 def get_driver():
     '''Get Chrome/Firefox driver from Selenium Hub'''
     try:
@@ -40,6 +42,9 @@ def selenium_browser(context):
 def before_all(context):
     use_fixture(selenium_browser, context)
 
-def after_feature(context, feature):
+def after_scenario(context, scenario):
+    interval = 200/1000
+    time.sleep(interval)
     context.driver.delete_all_cookies()
     context.driver.get(context.base)
+    time.sleep(interval)
